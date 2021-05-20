@@ -6,17 +6,28 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
-    public static int TotalGold = 0;
+    public int SaveGold = 0;
 
-    public static float SaveTimer = 0f;
+    public float SaveTimer = 0f;
 
     public string ShopScene = "ShopSceneName";
 
     public bool isGoing = true;
 
+
+    private StaticVars StaticVars;
+
+
+    private void Awake()
+    {
+        StaticVars = GetComponent<StaticVars>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        SaveGold = StaticVars.TotalGold;
+        SaveTimer = StaticVars.TimePassed;
         Timer.instance.StartTimer();
         ShopTime.instance.StartTimer();
     }
@@ -32,13 +43,14 @@ public class GameController : MonoBehaviour
 
     private void AddGold()
     {
-        GoldCounter.instance.Gold = TotalGold;
+        GoldCounter.instance.Gold = SaveGold;
     }
 
     private void LoadShop()
     {
         Timer.instance.SaveTime();
-
+        StaticVars.TotalGold = SaveGold;
+        StaticVars.TimePassed = SaveTimer;
         StartCoroutine(WaitForTwoSeconds());
     }
 

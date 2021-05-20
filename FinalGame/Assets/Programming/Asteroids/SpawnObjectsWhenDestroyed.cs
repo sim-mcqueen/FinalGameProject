@@ -30,12 +30,9 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
     // Other objects
     private ObjectSpawnManager spawnManager = null;
 
-    private GameController GameController;
+    private GameObject GameController;
+    private GameController gameControllerScript;
 
-    void Awake()
-    {
-        GameController = GetComponent<GameController>();
-    }
 
 
     // Start is called before the first frame update
@@ -43,11 +40,13 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
     {
         mTransform = GetComponent<Transform>();
         spawnManager = FindObjectOfType<ObjectSpawnManager>();
+        GameController = GameObject.Find("GameManager");
+        gameControllerScript = GameController.GetComponent<GameController>();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        GameController.TotalGold += 1;
+        gameControllerScript.SaveGold += 1;
         if (mTransform == null)
             return;
 
