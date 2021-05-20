@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class ShopTime : MonoBehaviour
 {
-    public static Timer instance;
+    public static ShopTime instance;
 
     public TMP_Text textTimer;
 
@@ -19,11 +19,6 @@ public class Timer : MonoBehaviour
     {
         instance = this;
         GameController = GetComponent<GameController>();
-    }
-
-    void Start()
-    {
-        RestoreTime();
     }
 
 
@@ -39,8 +34,13 @@ public class Timer : MonoBehaviour
     void DisplayTime()
     {
         int minutes = Mathf.FloorToInt(timer / 60.0f);
-        int seconds = Mathf.FloorToInt(timer - minutes * 60.0f);
-        textTimer.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
+        int seconds = 60 - (Mathf.FloorToInt(timer - minutes * 60.0f));
+        textTimer.text = string.Format("{00}", seconds);
+        if(seconds == 1)
+        {
+            print("Shop Time");
+            ShopTimerDone();
+        }
     }
 
     public void StartTimer()
@@ -58,14 +58,10 @@ public class Timer : MonoBehaviour
         timer = 0.0f;
     }
 
-    public void RestoreTime()
+    public void ShopTimerDone()
     {
-        timer = GameController.SaveTimer;
-    }
+        GameController.isGoing = false;
 
-    public void SaveTime()
-    {
-        GameController.SaveTimer = timer;
     }
 
 }
