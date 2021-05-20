@@ -19,6 +19,7 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
     // Public properties
     public int MinObjectsToSpawn = 2;
     public int MaxObjectsToSpawn = 3;
+    
 
     // Don't spawn objects if total scale is lower than this
     public float SizeThresholdForSpawning = 0.5f;
@@ -29,6 +30,14 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
     // Other objects
     private ObjectSpawnManager spawnManager = null;
 
+    private GameController GameController;
+
+    void Awake()
+    {
+        GameController = GetComponent<GameController>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +47,7 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        GameController.TotalGold += 1;
         if (mTransform == null)
             return;
 
