@@ -16,6 +16,7 @@ using UnityEngine;
 public class PlayerShootingController : MonoBehaviour
 {
     public GameObject ProjectilePrefab = null;
+    public GameObject ShootSpot;
     public float ShootDelay = 0.5f;
     public float ProjectileSpeed = 2.0f;
     public KeyCode ShootKey = KeyCode.Space;
@@ -24,6 +25,7 @@ public class PlayerShootingController : MonoBehaviour
 
     private float shootTimer = 0.0f;
     private Transform mTransform = null;
+    private Transform ShootPos = null;
     private Rigidbody2D mRigidbody = null;
 
     // Start is called before the first frame update
@@ -31,6 +33,7 @@ public class PlayerShootingController : MonoBehaviour
     {
         shootTimer = ShootDelay;
         mTransform = GetComponent<Transform>();
+        ShootPos = ShootSpot.GetComponent<Transform>();
         mRigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -48,11 +51,11 @@ public class PlayerShootingController : MonoBehaviour
 
     void SpawnProjectile()
     {
-        var spawnPosition = mTransform.position;
+        var spawnPosition = ShootPos.position;
         // Nudge slightly ahead of ship
         var rotation = mTransform.eulerAngles.z * Mathf.Deg2Rad;
         var direction = new Vector3(Mathf.Cos(rotation), Mathf.Sin(rotation), 0.0f);
-        spawnPosition += direction * (mTransform.localScale.x / 2.0f
+        spawnPosition += direction * (ShootPos.localScale.x / 2.0f
             + ProjectilePrefab.transform.localScale.x / 2.0f);
 
         // Create object

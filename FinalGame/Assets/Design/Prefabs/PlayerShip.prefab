@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065600454185092281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.17, y: 0.99, z: 0}
+  m_LocalPosition: {x: 2.58, y: 0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070967342736071686}
@@ -303,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectilePrefab: {fileID: 7713413124967821733, guid: a60ac80a04f63e943a1751bba32ade4e,
     type: 3}
+  ShootSpot: {fileID: 2065600454185092281}
   ShootDelay: 0.1
   ProjectileSpeed: 2
   ShootKey: 32
