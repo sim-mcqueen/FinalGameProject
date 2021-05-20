@@ -181,3 +181,4 @@ MonoBehaviour:
   ScaleEffectFromSource: 1
   BaseScaleMultiplier: 1
   StartColor: {r: 0.9913361, g: 1, b: 0.8352941, a: 1}
+  ClipVolumeMultiplier: 1
