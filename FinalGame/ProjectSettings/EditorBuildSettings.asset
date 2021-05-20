@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Design/Scenes/OptionsMenu.unity
     guid: a3209cbe21fe12541abd76ba7effbe96
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Design/Scenes/SimTest.unity
     guid: 770f80ad55be2634ab5da25b2293deef
@@ -23,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Design/Scenes/GameLevel.unity
     guid: 61d8cab9ced1b584b8cccf291137c3eb
+  - enabled: 1
+    path: Assets/Design/Scenes/AndrewTest.unity
+    guid: 82bf0d60dde211241b516acf19fcc110
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 74039fdae2dd2c84092add1619ab49da,
       type: 2}

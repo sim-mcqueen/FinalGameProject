@@ -9,10 +9,13 @@ using UnityEngine;
 
 public class PurchaseItem : MonoBehaviour
 {
-    public int price;
     public string rarity;
-    public string title;
-    public string description;
+    public GameObject title;
+    public GameObject description;
+    public GameObject sprite;
+
+    private StaticVars StaticVars;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +27,21 @@ public class PurchaseItem : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void BuyItem()
+    {
+        if(rarity == "Common")
+        {
+            StaticVars.TotalGold -= 10;
+        }
+        if(rarity == "Rare")
+        {
+            StaticVars.TotalGold -= 20;
+        }
+        if(rarity == "Legendary")
+        {
+            StaticVars.TotalGold -= 50;
+        }
     }
 }
