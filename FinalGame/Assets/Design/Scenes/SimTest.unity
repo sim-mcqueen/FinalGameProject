@@ -806,94 +806,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798221985}
   m_CullTransparentMesh: 0
---- !u!1 &1806683204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806683207}
-  - component: {fileID: 1806683206}
-  - component: {fileID: 1806683205}
-  - component: {fileID: 1806683208}
-  - component: {fileID: 1806683209}
-  m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1806683205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806683204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f1956768f00594591c9ab348256730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShopScene: SimTest2
-  isGoing: 1
---- !u!114 &1806683206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806683204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 598f9682e0a42d74397dc1ed22970386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTimer: {fileID: 1087715051}
---- !u!4 &1806683207
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806683204}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806683208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806683204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d99bd133396de4d948e3a59ed52edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTimer: {fileID: 1798221987}
-  Gold: 0
---- !u!114 &1806683209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806683204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e3bc33277dda24dac900ebea437e34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTimer: {fileID: 1768774519}
 --- !u!1001 &2070967342667261098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -970,6 +882,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3810816240564403928, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
+        type: 3}
+      propertyPath: textTimer
+      value: 
+      objectReference: {fileID: 1087715051}
+    - target: {fileID: 6279477737321679980, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
+        type: 3}
+      propertyPath: textTimer
+      value: 
+      objectReference: {fileID: 1798221987}
     - target: {fileID: 6290884503859100504, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
         type: 3}
       propertyPath: m_Name
@@ -1034,6 +956,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817452553291210248, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
+        type: 3}
+      propertyPath: textTimer
+      value: 
+      objectReference: {fileID: 1768774519}
+    - target: {fileID: 7967368433409087185, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
+        type: 3}
+      propertyPath: ShopScene
+      value: SimTest2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56f8ab5b68bcd34dae24a4db359a1a2, type: 3}
