@@ -838,6 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f1956768f00594591c9ab348256730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShopScene: SimTest2
   isGoing: 1
 --- !u!114 &1806683206
 MonoBehaviour:

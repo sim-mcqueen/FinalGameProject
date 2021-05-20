@@ -11,9 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Design/Scenes/OptionsMenu.unity
     guid: a3209cbe21fe12541abd76ba7effbe96
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Design/Scenes/SimTest.unity
+    guid: 770f80ad55be2634ab5da25b2293deef
+  - enabled: 1
+    path: Assets/Design/Scenes/SimTest2.unity
+    guid: a2573f087990e0842aaf5ce40de2d658
   - enabled: 1
     path: Assets/Design/Scenes/GameLevel.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 61d8cab9ced1b584b8cccf291137c3eb
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 74039fdae2dd2c84092add1619ab49da,
       type: 2}
