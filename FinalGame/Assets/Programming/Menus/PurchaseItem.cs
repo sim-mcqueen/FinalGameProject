@@ -7,10 +7,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+public class PurchaseItem : MonoBehaviour
 {
+    public int price;
+    public string rarity;
+    public string title;
+    public string description;
 
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,15 +24,5 @@ public class Shop : MonoBehaviour
     void Update()
     {
         
-    }
-
-    void Reroll()
-    {
-
-    }
-
-    void BuyItem()
-    {
-
     }
 }
