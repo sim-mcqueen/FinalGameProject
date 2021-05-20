@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6046975222712969568}
   - component: {fileID: 6046975222712969598}
   - component: {fileID: 309107074299230629}
-  - component: {fileID: 1803370620779188948}
   - component: {fileID: 2069553680734708172}
   - component: {fileID: -2778174407405668588}
   - component: {fileID: -6793514599948381963}
+  - component: {fileID: 233028864461526484}
   m_Layer: 10
   m_Name: Asteroid
   m_TagString: Asteroid
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6046975222712969571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8467526, y: 2.5528812, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6b63ff0332d881347b3d22d42307701a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 85d2aea925b5981458124c294180926e, type: 3}
+  m_Color: {r: 0.8130195, g: 0.759434, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,22 +120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &1803370620779188948
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6046975222712969571}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &2069553680734708172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,3 +166,19 @@ MonoBehaviour:
   BaseScaleMultiplier: 1
   StartColor: {r: 0.9913361, g: 1, b: 0.8352941, a: 1}
   ClipVolumeMultiplier: 1
+--- !u!70 &233028864461526484
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6046975222712969571}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.22454739, y: 0}
+  m_Size: {x: 18.806105, y: 20.071735}
+  m_Direction: 0
