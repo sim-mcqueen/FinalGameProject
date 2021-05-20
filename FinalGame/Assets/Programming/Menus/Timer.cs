@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60.0f);
         int seconds = Mathf.FloorToInt(timer - minutes * 60.0f);
-        textTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        textTimer.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
     }
 
     public void StartTimer()
