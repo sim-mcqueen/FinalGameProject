@@ -195,7 +195,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5898939725787578259, guid: 8f5281082f29b51448cdf2287c65c222,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: adcf629707eae3a48a70007c615be18f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fe27b45798a2679408c5655417d320d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.08
   m_Pitch: 1
@@ -369,7 +369,7 @@ MonoBehaviour:
   TimeUntilRestart: 3
   EffectPrefab: {fileID: 1476684567254845148, guid: 0baa11af58bec284b97d1f91022c3d7f,
     type: 3}
-  ClipToPlay: {fileID: 8300000, guid: d9d46a67ad68d214fa4bd7bf087eaa4c, type: 3}
+  ClipToPlay: {fileID: 8300000, guid: aea60a2bd1c1e074e84802e4fddb6ffc, type: 3}
   EffectMaxDistance: 1
   EffectInterval: 0.5
   EffectScaleMultiplier: 2

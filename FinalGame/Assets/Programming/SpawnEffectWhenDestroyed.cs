@@ -17,8 +17,8 @@ public class SpawnEffectWhenDestroyed : MonoBehaviour
 {
     // Public properties
     public GameObject EffectPrefab = null;
-    public AudioClip ClipToPlay = null;
-    
+    public AudioClip[] audioSources = null;
+
     // Whether to scale effect object based on this object's scale 
     public bool ScaleEffectFromSource = true;
 
@@ -67,9 +67,9 @@ public class SpawnEffectWhenDestroyed : MonoBehaviour
 
         // Set audio clip for effect
         var audioSource = effect.GetComponent<AudioSource>();
-        if (audioSource != null && ClipToPlay != null)
+        if (audioSource != null && audioSources != null)
         {
-            audioSource.clip = ClipToPlay;
+            audioSource.clip = audioSources[Random.Range(0, audioSources.Length)];
             audioSource.volume *= ClipVolumeMultiplier;
             audioSource.Play();
         }

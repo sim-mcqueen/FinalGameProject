@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EffectPrefab: {fileID: 1476684567254845148, guid: 0baa11af58bec284b97d1f91022c3d7f,
     type: 3}
-  ClipToPlay: {fileID: 0}
+  audioSources: []
   ScaleEffectFromSource: 1
   BaseScaleMultiplier: 0.5
   StartColor: {r: 0.749445, g: 1, b: 0.504717, a: 1}
@@ -188,9 +188,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5898939725787578259, guid: 8f5281082f29b51448cdf2287c65c222,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: ee807a44ac008014690c2f8f81fdca5d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 36ca452c07b6b5c48812dc55d7fdece0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.097
   m_Pitch: 1
   Loop: 0
   Mute: 0
