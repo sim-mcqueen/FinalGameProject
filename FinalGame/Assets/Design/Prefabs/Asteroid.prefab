@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinObjectsToSpawn: 2
   MaxObjectsToSpawn: 3
-  SizeThresholdForSpawning: 0.7
+  SizeThresholdForSpawning: 0.05
 --- !u!114 &-6793514599948381963
 MonoBehaviour:
   m_ObjectHideFlags: 0
