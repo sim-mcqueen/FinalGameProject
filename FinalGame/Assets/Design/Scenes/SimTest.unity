@@ -986,7 +986,7 @@ PrefabInstance:
     - target: {fileID: 7967368433409087185, guid: c56f8ab5b68bcd34dae24a4db359a1a2,
         type: 3}
       propertyPath: ShopScene
-      value: AndrewTest
+      value: AndrewShopTest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56f8ab5b68bcd34dae24a4db359a1a2, type: 3}

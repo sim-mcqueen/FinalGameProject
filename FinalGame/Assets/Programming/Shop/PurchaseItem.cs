@@ -56,6 +56,7 @@ public class PurchaseItem : MonoBehaviour
             {
                 StaticVars.TotalGold -= commonPrice;
             }
+            
         }
 
         if(rarity == "Rare")
