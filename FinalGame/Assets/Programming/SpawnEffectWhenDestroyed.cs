@@ -69,7 +69,7 @@ public class SpawnEffectWhenDestroyed : MonoBehaviour
         var audioSource = effect.GetComponent<AudioSource>();
         if (audioSource != null && audioSources != null)
         {
-            audioSource.clip = audioSources[Random.Range(0, audioSources.Length)];
+            audioSource.clip = audioSources[Random.Range(0, 2)];
             audioSource.volume *= ClipVolumeMultiplier;
             audioSource.Play();
         }
