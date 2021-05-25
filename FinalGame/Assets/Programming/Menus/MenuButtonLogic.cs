@@ -64,7 +64,7 @@ public class MenuButtonLogic : MonoBehaviour
 
     private void Play()
     {
-        SceneManager.LoadScene("GameLevel");
+        SceneManager.LoadScene("AndrewPlayTest");
     }
 
     private void Exit()
