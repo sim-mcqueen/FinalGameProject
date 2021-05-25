@@ -50,6 +50,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         Rotate();
         Move();
+        RotateSpeed = StaticVars.TurnSpeed;
     }
 
     private void Move()

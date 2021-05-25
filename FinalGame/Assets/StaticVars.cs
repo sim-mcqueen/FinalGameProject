@@ -6,6 +6,6 @@ public class StaticVars : MonoBehaviour
 {
     public static int TotalGold = 0;
     public static float TimePassed = 0f;
-    public static int TurnSpeed = 100;
+    public static float TurnSpeed = 100f;
     public static int TotalWaves = 1;
 }
