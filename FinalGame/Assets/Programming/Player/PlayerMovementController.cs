@@ -34,6 +34,7 @@ public class PlayerMovementController : MonoBehaviour
     private Rigidbody2D mRigidbody = null;
     private Transform mTransform = null;
     private AudioSource mAudioSource = null;
+    private StaticVars StaticVars;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class PlayerMovementController : MonoBehaviour
         mRigidbody = GetComponent<Rigidbody2D>();
         mTransform = GetComponent<Transform>();
         mAudioSource = GetComponent<AudioSource>();
+        StaticVars = GetComponent<StaticVars>();
     }
 
     // Update is called once per frame
