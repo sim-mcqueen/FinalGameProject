@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 
     public float SaveTimer = 0f;
 
-    public string ShopScene = "ShopSceneName";
+    public string ShopScene = "AndrewShopTest";
 
     public bool isGoing = true;
 
