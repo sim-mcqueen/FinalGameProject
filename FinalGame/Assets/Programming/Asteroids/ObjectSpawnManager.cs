@@ -25,7 +25,7 @@ public class ObjectSpawnManager : MonoBehaviour
     public float SpawnScaleFactor = 0.6f;
 
     // Waves
-    public int MaxWaveSize = 20;
+    public int MaxWaveSize = 50;
     public int StartingWaveSize = 8;
 
     // Other objects
@@ -178,12 +178,14 @@ public class ObjectSpawnManager : MonoBehaviour
 
     void SpawnNextWave()
     {
+        StaticVars.TotalWaves += 1;
+
         for(var i = 0; i < currentWaveSize; ++i)
         {
             SpawnAtRandomPosition();
         }
 
         // Increase wave size if below max
-        currentWaveSize = currentWaveSize < MaxWaveSize ? currentWaveSize + 1 : currentWaveSize;
+        currentWaveSize = currentWaveSize < MaxWaveSize ? currentWaveSize + 2 : currentWaveSize;
     }
 }
