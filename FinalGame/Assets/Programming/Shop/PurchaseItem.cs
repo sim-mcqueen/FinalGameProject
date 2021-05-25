@@ -38,7 +38,7 @@ public class PurchaseItem : MonoBehaviour
         {
             itemPrice.text = string.Format("{00}G", legendaryPrice);
         }
-        
+        StaticVars = GetComponent<StaticVars>();
     }
 
     // Update is called once per frame
@@ -58,7 +58,7 @@ public class PurchaseItem : MonoBehaviour
                 if(title.text == "Motor Oil")
                 {
                     print("Yay");
-
+                    StaticVars.TurnSpeed += 10;
                 }
             }
             
