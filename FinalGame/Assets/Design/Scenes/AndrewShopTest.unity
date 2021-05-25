@@ -2288,7 +2288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rarity: Common
   itemPrice: {fileID: 1965639074}
-  title: {fileID: 658525295}
+  title: {fileID: 658525297}
   description: {fileID: 2000932022}
   sprite: {fileID: 785710739}
   commonPrice: 10

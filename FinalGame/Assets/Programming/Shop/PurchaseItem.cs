@@ -12,7 +12,7 @@ public class PurchaseItem : MonoBehaviour
 {
     public string rarity;
     public TMP_Text itemPrice;
-    public GameObject title;
+    public TMP_Text title;
     public GameObject description;
     public GameObject sprite;
     public int commonPrice = 10;
@@ -55,6 +55,11 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= commonPrice)
             {
                 StaticVars.TotalGold -= commonPrice;
+                if(title.text == "Motor Oil")
+                {
+                    print("Yay");
+
+                }
             }
             
         }
