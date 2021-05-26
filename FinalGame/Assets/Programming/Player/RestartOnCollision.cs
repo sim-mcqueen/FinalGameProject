@@ -57,7 +57,7 @@ public class RestartOnCollision : MonoBehaviour
         {
             if(timer > TimeUntilRestart)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("MainMenu");
             }
 
             if(effectTimer > EffectInterval)
