@@ -15,12 +15,25 @@ public class ItemSetter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //n = Random.Range(0, 2);
-        n = 0;
-        if (n == 0)
+        if(rarity == 0)
         {
-            TitleText.text = string.Format("Motor Oil");
-            DescText.text = string.Format("Increases Turn Speed");
+            n = Random.Range(0, 2);
+            n = 0;
+            if (n == 0)
+            {
+                TitleText.text = string.Format("Motor Oil");
+                DescText.text = string.Format("Increases Turn Speed");
+            }
+            else if (n == 1)
+            {
+                TitleText.text = string.Format("Energy Drink");
+                DescText.text = string.Format("Decreases the time it takes for you to hit max speed");
+            }
+            else if (n == 2)
+            {
+                TitleText.text = string.Format("Brake Enhancements");
+                DescText.text = string.Format("Decrease the time it takes for you to stop");
+            }
         }
     }
 }
