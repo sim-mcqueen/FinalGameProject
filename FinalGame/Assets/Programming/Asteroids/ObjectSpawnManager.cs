@@ -59,6 +59,7 @@ public class ObjectSpawnManager : MonoBehaviour
     void Start()
     {
         currentWaveSize = StartingWaveSize;
+        StaticVars.TotalWaves = 0;
 
         mCamera = Camera.main;
         float vertExtent = mCamera.orthographicSize;

@@ -8,4 +8,6 @@ public class StaticVars : MonoBehaviour
     public static float TimePassed = 0f;
     public static float TurnSpeed = 100f;
     public static int TotalWaves = 1;
+    
+
 }

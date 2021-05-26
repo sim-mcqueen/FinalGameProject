@@ -9,9 +9,7 @@ using UnityEngine;
 
 public class ShopReroll : MonoBehaviour
 {
-    public GameObject commonItem;
-    public GameObject rareItem;
-    public GameObject legendaryItem;
+    public GameObject shopItem;
     
     // Start is called before the first frame update
     void Start()
@@ -26,6 +24,10 @@ public class ShopReroll : MonoBehaviour
     }
     public void Reroll()
     {
+        // Get title
+        // Get description
+        // Get sprite
 
+        // Change title, desc, and sprite to new item
     }
 }
