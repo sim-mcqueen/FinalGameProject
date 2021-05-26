@@ -1726,6 +1726,26 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[46].y
       value: 0.34307086
       objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071710, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071710, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: Priority
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071710, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071710, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2757521452979052217, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
         type: 3}
       propertyPath: m_Enabled
