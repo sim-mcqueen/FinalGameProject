@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Head Shooting:'
+  m_text: Hand Gun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31d6d53067bf87a42a3f5e36bdf9fbe8, type: 2}
   m_sharedMaterial: {fileID: -7794547612939717481, guid: 31d6d53067bf87a42a3f5e36bdf9fbe8,
