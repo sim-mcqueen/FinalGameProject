@@ -60,6 +60,20 @@ public class PurchaseItem : MonoBehaviour
                     print("Yay");
                     StaticVars.TurnSpeed += 10;
                 }
+                else if(title.text == "Energy Drink")
+                {
+                    print("Drink");
+                    StaticVars.TotalAccelerationAmount += 0.01f;
+                }
+                else if (title.text == "Brake Enhancements")
+                {
+                    print("Brake");
+                    StaticVars.TotalDecelerationAmount += 0.001f;
+                }
+                else if (title.text == "Upgraded Engine")
+                {
+                    print("Engine");
+                }
             }
             
         }
@@ -69,6 +83,18 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= rarePrice)
             {
                 StaticVars.TotalGold -= rarePrice;
+                if (title.text == "Efficient Blasters")
+                {
+                    print("blaster");
+                }
+                else if (title.text == "Augmented Lasers")
+                {
+                    print("laser");
+                }
+                else if (title.text == "Side Blasters")
+                {
+                    print("side");
+                }
             } 
         }
 
@@ -77,6 +103,10 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= legendaryPrice)
             {
                 StaticVars.TotalGold -= legendaryPrice;
+                if (title.text == "Money Printer")
+                {
+                    print("money");
+                }
             }   
         }
     }
