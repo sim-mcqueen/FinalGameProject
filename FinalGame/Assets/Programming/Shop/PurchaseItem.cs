@@ -21,30 +21,34 @@ public class PurchaseItem : MonoBehaviour
 
 
     private StaticVars StaticVars;
-    
+    private SpriteRenderer sp;
+
+    Color commonColor = new Color(0.6f, 0.6f, 0.6f, 1f);
+    Color rareColor = new Color(94f / 255f, 204f / 255f, 255f / 255f, 1f);
+    Color legendaryColor = new Color(255f / 255f, 56f / 255f, 46f/255f, 1f);
+
 
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        if(rarity == "Common")
+        sp = sprite.GetComponent<SpriteRenderer>();
+
+        if (rarity == "Common")
         {
             itemPrice.text = string.Format("{00}G", commonPrice);
+            sp.color = commonColor;
         }
         if(rarity == "Rare")
         {
             itemPrice.text = string.Format("{00}G", rarePrice);
+            sp.color = rareColor;
         }
         if(rarity == "Legendary")
         {
             itemPrice.text = string.Format("{00}G", legendaryPrice);
+            sp.color = legendaryColor;
         }
         StaticVars = GetComponent<StaticVars>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void BuyItem()
