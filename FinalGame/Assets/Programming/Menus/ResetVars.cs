@@ -11,8 +11,8 @@ public class ResetVars : MonoBehaviour
         StaticVars.TimePassed = 0f;
         StaticVars.TurnSpeed = 100f;
         StaticVars.TotalWaves = 0;
-        StaticVars.TotalAccelerationAmount = 0.1f;
-        StaticVars.TotalDecelerationAmount = 0.01f;
+        StaticVars.TotalAccelerationAmount = 5f;
+        StaticVars.TotalDecelerationAmount = 10f;
     }   
 }
 
