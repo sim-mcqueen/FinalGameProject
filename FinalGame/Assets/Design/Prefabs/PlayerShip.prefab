@@ -64,7 +64,7 @@ Transform:
   m_GameObject: {fileID: 2070967342736071680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.18, y: 0.18, z: 0.2}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.2}
   m_Children:
   - {fileID: 2379454136404419905}
   m_Father: {fileID: 0}
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7bc8ef50581b67a499c4ad1f76e99ad0, type: 3}
-  m_Color: {r: 0.6084906, g: 0.7522479, b: 1, a: 1}
+  m_Color: {r: 0.9019608, g: 1, b: 0.9372549, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -166,10 +166,28 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.6366386, y: -3.0267072}
-      - {x: 1.3857174, y: -3.5703306}
-      - {x: 1.511049, y: -0.1700145}
-      - {x: 5.8269176, y: 0.61598784}
+    - - {x: -5.915414, y: -0.34827468}
+      - {x: -5.9268274, y: -0.96333534}
+      - {x: -5.7994695, y: -1.7058203}
+      - {x: -5.3743334, y: -2.5824192}
+      - {x: -4.8560977, y: -3.2254705}
+      - {x: -4.084505, y: -3.6073003}
+      - {x: -2.602921, y: -3.855439}
+      - {x: -2.0770984, y: -4.0255527}
+      - {x: -0.7616627, y: -4.0496144}
+      - {x: 0.91176987, y: -3.9272912}
+      - {x: 1.5728617, y: -3.6235168}
+      - {x: 1.8965077, y: -3.2977326}
+      - {x: 1.9575897, y: -2.961991}
+      - {x: 1.852297, y: -2.692198}
+      - {x: 2.2234216, y: -2.2000964}
+      - {x: 2.2262607, y: -1.6216904}
+      - {x: 1.9812223, y: -1.3105808}
+      - {x: 2.0273602, y: -0.7055964}
+      - {x: 1.7744799, y: -0.26313066}
+      - {x: 3.9738576, y: -0.07219914}
+      - {x: 5.643727, y: 0.36432898}
+      - {x: 6.145877, y: 0.66932565}
       - {x: 6.227789, y: 1.1483582}
       - {x: 5.790189, y: 1.5290512}
       - {x: 3.9125152, y: 1.7396007}
@@ -182,7 +200,18 @@ PolygonCollider2D:
       - {x: -1.2912508, y: 5.543151}
       - {x: -1.571977, y: 6.168318}
       - {x: -1.9310112, y: 6.5692368}
-      - {x: -2.3044884, y: 6.724803}
+      - {x: -2.0809362, y: 6.646836}
+      - {x: -2.5263057, y: 6.7968955}
+      - {x: -2.9842556, y: 6.773358}
+      - {x: -3.2051964, y: 6.426612}
+      - {x: -3.2406693, y: 5.9145694}
+      - {x: -3.1880128, y: 5.5276365}
+      - {x: -3.1827102, y: 5.0568376}
+      - {x: -3.3351283, y: 4.277384}
+      - {x: -3.7821352, y: 3.4167922}
+      - {x: -4.3914185, y: 2.7095726}
+      - {x: -5.0336943, y: 2.1206145}
+      - {x: -5.5300684, y: 1.3232362}
       - {x: -5.823836, y: 0.34307086}
 --- !u!82 &2070967342736071710
 AudioSource:
@@ -197,13 +226,13 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: fe27b45798a2679408c5655417d320d2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.12
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 220
+  Priority: 150
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -325,9 +354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeedMax: 5
-  RotateSpeed: 90
-  AccelerationAmount: 2.5
-  DecelerationAmount: 1.75
+  RotateSpeed: 100
+  AccelerationAmount: 5
+  DecelerationAmount: 10
   AccelerationEnabled: 1
   DecelerationEnabled: 1
   MoveForwardKey: 119
@@ -373,5 +402,5 @@ MonoBehaviour:
   EffectMaxDistance: 1
   EffectInterval: 0.5
   EffectScaleMultiplier: 2
-  EffectStartColor: {r: 1, g: 0.7745887, b: 0.109803915, a: 1}
+  EffectStartColor: {r: 0.5803922, g: 0.36078432, b: 0.34901962, a: 1}
   ClipVolumeMultiplier: 0.5

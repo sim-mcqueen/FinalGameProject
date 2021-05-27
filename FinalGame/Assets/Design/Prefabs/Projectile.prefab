@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: efef84fe2cbc56d44aa7516dea966587, type: 3}
-  m_Color: {r: 0, g: 0.0741992, b: 1, a: 1}
+  m_Color: {r: 0.8784314, g: 0.7137255, b: 0.7058824, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   ScaleEffectFromSource: 1
   BaseScaleMultiplier: 0.5
-  StartColor: {r: 0.749445, g: 1, b: 0.504717, a: 1}
+  StartColor: {r: 0.5803922, g: 0.36078432, b: 0.34901962, a: 1}
   ClipVolumeMultiplier: 1
 --- !u!82 &-9020428945596597399
 AudioSource:
