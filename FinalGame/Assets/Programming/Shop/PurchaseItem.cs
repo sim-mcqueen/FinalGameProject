@@ -19,7 +19,6 @@ public class PurchaseItem : MonoBehaviour
     public int rarePrice = 20;
     public int legendaryPrice = 50;
 
-
     private StaticVars StaticVars;
     private SpriteRenderer sp;
 
@@ -59,7 +58,9 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= commonPrice)
             {
                 StaticVars.TotalGold -= commonPrice;
-                if(title.text == "Motor Oil")
+                PlayBuySound();
+
+                if (title.text == "Motor Oil")
                 {
                     print("Yay");
                     StaticVars.TurnSpeed += 10;
@@ -87,6 +88,8 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= rarePrice)
             {
                 StaticVars.TotalGold -= rarePrice;
+                PlayBuySound();
+
                 if (title.text == "Efficient Blasters")
                 {
                     print("blaster");
@@ -107,11 +110,21 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= legendaryPrice)
             {
                 StaticVars.TotalGold -= legendaryPrice;
+                PlayBuySound();
+
                 if (title.text == "Money Printer")
                 {
                     print("money");
                 }
             }   
+        }
+    }
+    private void PlayBuySound()
+    {
+        var audioSource = GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            audioSource.Play();
         }
     }
 }
