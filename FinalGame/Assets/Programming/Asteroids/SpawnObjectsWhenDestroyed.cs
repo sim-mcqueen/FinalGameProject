@@ -32,7 +32,7 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
 
     private GameObject GameController;
     private GameController gameControllerScript;
-
+    private StaticVars StaticVars;
 
 
     // Start is called before the first frame update
@@ -42,11 +42,12 @@ public class SpawnObjectsWhenDestroyed : MonoBehaviour
         spawnManager = FindObjectOfType<ObjectSpawnManager>();
         GameController = GameObject.Find("GameManager");
         gameControllerScript = GameController.GetComponent<GameController>();
+        StaticVars = GetComponent<StaticVars>();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        gameControllerScript.SaveGold += 1;
+        gameControllerScript.SaveGold += 1 * StaticVars.MoneyMultiplier;
         if (mTransform == null)
             return;
 

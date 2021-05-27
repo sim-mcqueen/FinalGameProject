@@ -1206,5 +1206,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071704, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: ShootDelay
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071704, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: TotalProjectiles
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070967342736071704, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9,
+        type: 3}
+      propertyPath: AddPlayerMoveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e6d99a5ed473aa45961bd9ab56a3dd9, type: 3}

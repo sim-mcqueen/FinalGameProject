@@ -53,6 +53,7 @@ public class PlayerMovementController : MonoBehaviour
         RotateSpeed = StaticVars.TurnSpeed;
         AccelerationAmount = StaticVars.TotalAccelerationAmount;
         DecelerationAmount = StaticVars.TotalDecelerationAmount;
+        MoveSpeedMax = StaticVars.TotalMoveSpeed;
     }
 
     private void Move()

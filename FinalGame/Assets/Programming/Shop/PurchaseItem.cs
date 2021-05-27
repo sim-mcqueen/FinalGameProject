@@ -77,6 +77,7 @@ public class PurchaseItem : MonoBehaviour
                 else if (title.text == "Upgraded Engine")
                 {
                     print("Engine");
+                    StaticVars.TotalMoveSpeed += 0.5f;
                 }
             }
             
@@ -90,14 +91,17 @@ public class PurchaseItem : MonoBehaviour
                 if (title.text == "Efficient Blasters")
                 {
                     print("blaster");
+                    StaticVars.TotalAttackSpeed -= 0.02f;
                 }
                 else if (title.text == "Augmented Lasers")
                 {
                     print("laser");
+                    StaticVars.TotalProjectileSpeed += 0.1f;
                 }
                 else if (title.text == "Side Blasters")
                 {
                     print("side");
+                    StaticVars.TotalProjectiles += 1;
                 }
             } 
         }
@@ -110,6 +114,7 @@ public class PurchaseItem : MonoBehaviour
                 if (title.text == "Money Printer")
                 {
                     print("money");
+                    StaticVars.MoneyMultiplier += 1;
                 }
             }   
         }

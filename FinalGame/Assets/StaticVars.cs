@@ -12,9 +12,9 @@ public class StaticVars : MonoBehaviour
     public static float TotalDecelerationAmount = 10f;
 
     // Connect these to player controller
-    public static float TotalMoveSpeed;
-    public static float TotalAttackSpeed;
-    public static float TotalProjectileSpeed;
-    public static int TotalProjectiles;
-    public static float MoneyMultiplier;
+    public static float TotalMoveSpeed = 5f;
+    public static float TotalAttackSpeed = 0.3f;
+    public static float TotalProjectileSpeed = 2f;
+    public static int TotalProjectiles = 1;
+    public static int MoneyMultiplier = 1;
 }
