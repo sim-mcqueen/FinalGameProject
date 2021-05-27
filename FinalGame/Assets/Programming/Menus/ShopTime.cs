@@ -8,7 +8,7 @@ public class ShopTime : MonoBehaviour
 {
     public static ShopTime instance;
 
-    public TMP_Text textTimer;
+    //public TMP_Text textTimer;
 
     private float timer = 0.0f;
     private bool isTimer = false;
@@ -35,7 +35,7 @@ public class ShopTime : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60.0f);
         int seconds = 60 - (Mathf.FloorToInt(timer - minutes * 60.0f));
-        textTimer.text = string.Format("{00}", seconds);
+        //textTimer.text = string.Format("{00}", seconds);
         if(seconds == 1)
         {
             print("Shop Time");
