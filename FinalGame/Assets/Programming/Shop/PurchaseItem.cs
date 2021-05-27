@@ -106,7 +106,7 @@ public class PurchaseItem : MonoBehaviour
                 else if (title.text == "Side Blasters")
                 {
                     print("side");
-                    StaticVars.TotalProjectiles += 1;
+                    //StaticVars.TotalProjectiles += 1;
                 }
             } 
         }
