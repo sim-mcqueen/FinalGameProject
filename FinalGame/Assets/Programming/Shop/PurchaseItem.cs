@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PurchaseItem : MonoBehaviour
@@ -15,6 +16,7 @@ public class PurchaseItem : MonoBehaviour
     public TMP_Text title;
     public GameObject description;
     public GameObject sprite;
+    public GameObject buyButton;
     public int commonPrice = 10;
     public int rarePrice = 20;
     public int legendaryPrice = 50;
@@ -58,7 +60,7 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= commonPrice)
             {
                 StaticVars.TotalGold -= commonPrice;
-                PlayBuySound();
+                OnBuy();
 
                 if (title.text == "Motor Oil")
                 {
@@ -89,7 +91,7 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= rarePrice)
             {
                 StaticVars.TotalGold -= rarePrice;
-                PlayBuySound();
+                OnBuy();
 
                 if (title.text == "Efficient Blasters")
                 {
@@ -114,7 +116,7 @@ public class PurchaseItem : MonoBehaviour
             if(StaticVars.TotalGold >= legendaryPrice)
             {
                 StaticVars.TotalGold -= legendaryPrice;
-                PlayBuySound();
+                OnBuy();
 
                 if (title.text == "Money Printer")
                 {
@@ -124,8 +126,10 @@ public class PurchaseItem : MonoBehaviour
             }   
         }
     }
-    private void PlayBuySound()
+    private void OnBuy()
     {
+        Button buy = buyButton.GetComponent<Button>();
+        buy.interactable = false;
         var audioSource = GetComponent<AudioSource>();
         if (audioSource != null)
         {
