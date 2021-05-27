@@ -16,11 +16,13 @@ public class GameController : MonoBehaviour
 
 
     private StaticVars StaticVars;
+    private Timer Timer;
 
 
     private void Awake()
     {
         StaticVars = GetComponent<StaticVars>();
+        Timer = GetComponent<Timer>();
     }
 
     // Start is called before the first frame update
@@ -50,6 +52,7 @@ public class GameController : MonoBehaviour
     {
         Timer.instance.SaveTime();
         StaticVars.TotalGold = SaveGold;
+        Timer.SaveTime();
         StaticVars.TimePassed = SaveTimer;
         StartCoroutine(WaitForTwoSeconds());
     }
