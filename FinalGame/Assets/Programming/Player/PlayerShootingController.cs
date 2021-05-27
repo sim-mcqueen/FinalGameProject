@@ -20,7 +20,7 @@ public class PlayerShootingController : MonoBehaviour
     public float ShootDelay = 0.5f;
     public float ProjectileSpeed = 2.0f;
     public KeyCode ShootKey = KeyCode.Space;
-    public int TotalProjectiles = 1;
+    //public int TotalProjectiles = 1;
     // If true, adds player move speed to projectile speed
     public bool AddPlayerMoveSpeed = true;
 
@@ -57,7 +57,7 @@ public class PlayerShootingController : MonoBehaviour
         shootTimer += Time.deltaTime;
 
         ProjectileSpeed = StaticVars.TotalProjectileSpeed;
-        TotalProjectiles = StaticVars.TotalProjectiles;
+        //TotalProjectiles = StaticVars.TotalProjectiles;
 
 
     }
@@ -70,16 +70,16 @@ public class PlayerShootingController : MonoBehaviour
         var direction = new Vector3(Mathf.Cos(rotation), Mathf.Sin(rotation), 0.0f);
         spawnPosition += direction * (ShootPos.localScale.x / 2.0f
             + ProjectilePrefab.transform.localScale.x / 2.0f);
-        for(int i = TotalProjectiles; i > 0; i--)
-        {
-            // Create object
-            var projectile = GameObject.Instantiate(ProjectilePrefab, spawnPosition, mTransform.rotation);
+        
+        
+        // Create object
+        var projectile = GameObject.Instantiate(ProjectilePrefab, spawnPosition, mTransform.rotation);
 
-            // Move object
-            var body = projectile.GetComponent<Rigidbody2D>();
-            body.velocity = direction * ProjectileSpeed;
-            if (AddPlayerMoveSpeed)
-                body.velocity += mRigidbody.velocity;
-        }
+        // Move object
+        var body = projectile.GetComponent<Rigidbody2D>();
+        body.velocity = direction * ProjectileSpeed;
+        if (AddPlayerMoveSpeed)
+            body.velocity += mRigidbody.velocity;
+        
     }
 }

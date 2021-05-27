@@ -24,7 +24,6 @@ public class Items : MonoBehaviour
         UpgradedEngine,
         EfficientBlasters,
         AugmentedLasers,
-        SideBlasters,
         MoneyPrinter
     }
     
@@ -45,7 +44,7 @@ public class Items : MonoBehaviour
     public void ReRoll()
     {
             var commonItems = (ItemList)Random.Range((int)ItemList.MotorOil, (int)ItemList.UpgradedEngine + 1);
-            var rareItems = (ItemList)Random.Range((int)ItemList.EfficientBlasters, (int)ItemList.SideBlasters + 1);
+            var rareItems = (ItemList)Random.Range((int)ItemList.EfficientBlasters, (int)ItemList.AugmentedLasers + 1);
             var LegendaryItems = (ItemList)(int)ItemList.MoneyPrinter;
         
             int weightedChance = Random.Range(0, 100);
@@ -87,10 +86,6 @@ public class Items : MonoBehaviour
 
                 case ItemList.AugmentedLasers:
                     ChangeValues("Augmented Lasers", "Increase laser speed", "Rare");
-                    break;
-
-                case ItemList.SideBlasters:
-                    ChangeValues("Side Blasters", "Add another laser per shot", "Rare");
                     break;
 
                 case ItemList.MoneyPrinter:
