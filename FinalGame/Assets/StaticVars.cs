@@ -15,6 +15,6 @@ public class StaticVars : MonoBehaviour
     public static float TotalMoveSpeed = 5f;
     public static float TotalAttackSpeed = 0.3f;
     public static float TotalProjectileSpeed = 2f;
-    public static int TotalProjectiles = 1;
+    //public static int TotalProjectiles = 1;
     public static int MoneyMultiplier = 1;
 }
