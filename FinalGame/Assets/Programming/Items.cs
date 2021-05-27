@@ -37,6 +37,7 @@ public class Items : MonoBehaviour
     {
         if(StaticVars.TotalGold >= 20)
         {
+            StaticVars.TotalGold -= 20;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
