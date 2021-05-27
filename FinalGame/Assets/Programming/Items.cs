@@ -34,13 +34,13 @@ public class Items : MonoBehaviour
     {
         var commonItems = (ItemList)Random.Range((int)ItemList.MotorOil, (int)ItemList.UpgradedEngine + 1);
         var rareItems = (ItemList)Random.Range((int)ItemList.EfficientBlasters, (int)ItemList.SideBlasters + 1);
-        var LegendaryItem = (ItemList)(int)ItemList.MoneyPrinter;
+        var LegendaryItems = (ItemList)(int)ItemList.MoneyPrinter;
         
         int weightedChance = Random.Range(0, 100);
 
         if (!(weightedChance < legendaryWeight))
         {
-            item = LegendaryItem;
+            item = LegendaryItems;
         }
         else if (!(weightedChance < rareWeight))
         {
@@ -87,7 +87,7 @@ public class Items : MonoBehaviour
         }
     }
 
-    private void ChangeValues(string title, string description, string rarity)
+    void ChangeValues(string title, string description, string rarity)
     {
         gameObject.GetComponent<PurchaseItem>().rarity = rarity;
         TitleText.text = title;
