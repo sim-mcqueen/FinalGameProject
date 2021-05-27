@@ -70,12 +70,12 @@ public class PurchaseItem : MonoBehaviour
                 else if(title.text == "Energy Drink")
                 {
                     print("Drink");
-                    StaticVars.TotalAccelerationAmount += 0.01f;
+                    StaticVars.TotalAccelerationAmount += 0.5f;
                 }
                 else if (title.text == "Brake Enhancements")
                 {
                     print("Brake");
-                    StaticVars.TotalDecelerationAmount += 0.001f;
+                    StaticVars.TotalDecelerationAmount += 1f;
                 }
                 else if (title.text == "Upgraded Engine")
                 {
